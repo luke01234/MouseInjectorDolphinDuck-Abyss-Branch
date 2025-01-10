@@ -168,6 +168,7 @@ avoid clicking off the window.
 | Return to Castle Wolfenstein: Operation Resurrection (USA) | SLUS-20297 | Good | <sup>Not fully tested</sub> | <sup>Auto Center View: Off</br>Always Aim: Off</sub> | - |
 | Robotech: Invasion (USA) | SLUS-20823 | Fair | <sup>Turrets not supported</br>Not fully tested</sub> | - | - |
 | SOCOM U.S. Navy SEALs (USA) | SCUS-97134 | Fair | <sup>Not fully tested</sub> | <sup>Aim Assist: Off</sub> | - |
+| Shadow Tower: Abyss (English Patch) | SLPS-25217 | Good | Strange vertex stretching across screen when turning too quickly. Not fully tested. | - | | - |
 | Serious Sam: Next Encounter (USA) | SLUS-20907 | Good | <sup>Vehicles not supported</br>Not fully tested</sub> | <sup>Auto Center: Off</br>Auto Aim: Off</sub> | - |
 | SWAT: Global Strike Team (USA) | SLUS-20433 | Good | <sup>Not fully tested</sub> | <sup>Auto Leveling: Off</br>Auto Aim: Off</br>Targeting Aid: Off</sub> | - |
 | Time Crisis II (USA) | SLUS-20219 | Good | <sup>Not fully tested</sub> | - | - |
