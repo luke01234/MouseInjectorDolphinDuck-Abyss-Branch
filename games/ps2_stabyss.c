@@ -131,6 +131,6 @@ static void PS2_STA_Inject(void)
 
 
   //you really only need these two
-	PS2_MEM_WriteFloat(STA_CAMX, (float)camX);
+	PS2_MEM_WriteFloat(STA_CAMX, camX);
   PS2_MEM_WriteFloat(STA_CAMY, camY);
 }
