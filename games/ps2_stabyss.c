@@ -77,8 +77,8 @@ static void PS2_STA_Inject(void)
 
   if(PS2_MEM_ReadUInt(STA_IS_BUSY))
     return;
-	float looksensitivity = (float)sensitivity; /// 40.f;
-	float scale = 300.f;
+	float looksensitivity = (float)sensitivity;
+	float scale = 12000.f;
 
 	float camX = PS2_MEM_ReadFloat(STA_CAMX);
 	float camY = PS2_MEM_ReadFloat(STA_CAMY);
