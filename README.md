@@ -159,7 +159,7 @@ avoid clicking off the window.
 | Destroy All Humans! (USA) | SLUS-20945 | Good | <sup>**Requires supplied cheat file to disable aim-assist**</sub> | - | **67A29886.pnach** |
 | Destroy All Humans! 2 (USA) | SLUS-21439 | Good | <sup>**Requires supplied cheat file**</sub> | <sup>Not fully tested</sub> | **42DF8C8C.pnach** |
 | Dirge of Cerberus - Final Fantasy VII (USA) | SLUS-21419 | Good | <sup>**Requires supplied cheat file to disable auto-lookahead**</sub> | <sup>Not fully tested</sub> | **44A5FA15.pnach** |
-| Fugitive Hunter - War on Terror (USA) | SLUS-20464 | Good | - | | - | - |
+| Fugitive hunter - War on Terror (USA) | SLUS-20464 | Good | <sup> Not fully tested </sub> | - | - |
 | Eternal Ring (USA) | SLUS-20015 | Good | <sup>Not fully tested</sub> | - | - |
 | Ghost in the Shell: Stand Alone Complex (USA) | SLUS-21006 | Fair | <sup>Horizontal camera while climbing not clamped</sub> | - | - |
 | Global Defence Force (PAL) / Chikyū Bōeigun 2 (Japan) | SLES-54464, SLPM-62652 | Good | <sup>Vehicle mouse control is experimental</br>Not fully tested</sub> | <sup>Control Type: Technical</sub> | - |
@@ -178,7 +178,7 @@ avoid clicking off the window.
 | Return to Castle Wolfenstein: Operation Resurrection (USA) | SLUS-20297 | Good | <sup>Not fully tested</sub> | <sup>Auto Center View: Off</br>Always Aim: Off</sub> | - |
 | Robotech: Invasion (USA) | SLUS-20823 | Fair | <sup>Turrets not supported</br>Not fully tested</sub> | - | - |
 | SOCOM U.S. Navy SEALs (USA) | SCUS-97134 | Fair | <sup>Not fully tested</sub> | <sup>Aim Assist: Off</sub> | - |
-| Shadow Tower: Abyss (English Patch) | SLPS-25217 | Good | <sup>Strange vertex stretching across screen when turning too quickly. Not fully tested.<sup> | - | | - |
+| Shadow Tower: Abyss (English Patch) | SLPS-25217 | Good | <sup>Strange vertex stretching across screen when turning too quickly. Not fully tested. </sub> | - | | - |
 | Serious Sam: Next Encounter (USA) | SLUS-20907 | Good | <sup>Vehicles not supported</br>Not fully tested</sub> | <sup>Auto Center: Off</br>Auto Aim: Off</sub> | - |
 | SWAT: Global Strike Team (USA) | SLUS-20433 | Good | <sup>Not fully tested</sub> | <sup>Auto Leveling: Off</br>Auto Aim: Off</br>Targeting Aid: Off</sub> | - |
 | Time Crisis II (USA) | SLUS-20219 | Good | <sup>Not fully tested</sub> | - | - |
