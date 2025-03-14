@@ -524,7 +524,9 @@ uint8_t MEM_FindRamOffset(void)
 			emuRegionSize = 0x1BF000;
 		} else if (isRPCS3Handle == 1) {
 			// TODO: if rpcs3 just set offset to 0x330000000 since it seems to be static?
-			emuRegionSize = 0xCC00000; // Killzone HD
+      emuRegionSize = 0x0FFFFFFF;
+      emuoffset = 0x330000000ULL;
+			//emuRegionSize = 0xCC00000; // Killzone HD
 			// emuRegionSize = 0x100000; // HAZE
 		} else if (isPPSSPPHandle == 1) {
 			emuRegionSize = 0x1F00000;
@@ -537,7 +539,8 @@ uint8_t MEM_FindRamOffset(void)
 
 		// PCSX2: MEM_MAPPED
 		// PPSSPP: MEM_MAPPED
-		DWORD regionType = MEM_MAPPED; // Dolphin and DuckStation regions are type MEM_MAPPED
+    // RPCS3: MEM_MAPPED
+		DWORD regionType = MEM_MAPPED; // Dolphin, DuckStation and RPCS3 regions are type MEM_MAPPED
 		if (isN64handle == 1 || isKronosHandle == 1)
 			regionType = MEM_PRIVATE;  // All N64 emulator regions are type MEM_PRIVATE
 		if (isBSNEShandle == 1 || isBSNESMercuryHandle == 1)
@@ -572,10 +575,15 @@ uint8_t MEM_FindRamOffset(void)
 		// }
 
 		// check if region is the size of region where console memory is located
-		uint8_t regionFound = 0;
-		if (info.RegionSize == emuRegionSize && ((info.Type == regionType) || isN64handle))
-			regionFound = 1;
-		
+		uint8_t regionFound = 0;  
+		if ((info.RegionSize == emuRegionSize && ((info.Type == regionType)) || isN64handle || isRPCS3Handle)) 
+			{
+        regionFound = 1;
+      }
+    else
+    {
+      //while (1) printf("failed to find region %d\n", isRPCS3Handle);
+    }
 		// if (isBizHawkSNESHandle && !regionFound)
 		// {
 		// 	if (info.Type == regionType)
@@ -612,8 +620,11 @@ uint8_t MEM_FindRamOffset(void)
 							continue;
 					}
 					else if (isRPCS3Handle == 1) {
-						if (lastRegionSize != 0xFF70000)
-							continue;
+            //printf("emuoffset ps3 set %11x\n", emuoffset);
+            emuoffset = 0x330000000ULL;
+            //while (1) printf("emuoffset ps3 set %11x\n", emuoffset); //this will print incorrectly, dont worry about it its being set properly
+						/*if (lastRegionSize != 0xFF70000)
+							continue;*/
 					}
 					else if (isNOMONEYPSXHandle == 1) {
 						emuoffset += 0x30100;
@@ -1202,7 +1213,10 @@ void SD_MEM_WriteFloat(const uint32_t addr, float value)
 uint32_t PS3_MEM_ReadUInt(const uint32_t addr)
 {
 	if(!emuoffset || PS3NOTWITHINMEMRANGE(addr))
+    //while (1) printf("Out of range.\n%d %d\n",emuoffset,PS3NOTWITHINMEMRANGE(addr));
 		return 0;
+  //printf("In range.\n%11x %d\n",emuoffset,PS3NOTWITHINMEMRANGE(addr));
+  //emuoffset = 0x330000000;
 	uint32_t output; // temp var used for output of function
 	ReadProcessMemory(emuhandle, (LPVOID)(emuoffset + addr), &output, sizeof(output), NULL);
 	MEM_ByteSwap32((uint32_t *)&output); // byteswap
@@ -1228,6 +1242,16 @@ float PS3_MEM_ReadFloat(const uint32_t addr)
 	float output; // temp var used for output of function
 	ReadProcessMemory(emuhandle, (LPVOID)(emuoffset + addr), &output, sizeof(output), NULL);
 	MEM_ByteSwap32((uint32_t *)&output); // byteswap
+	return output;
+}
+
+uint32_t PS3_MEM_ReadWord(const uint32_t addr) //function may or may not work idk
+{
+	if(!emuoffset || PSPNOTWITHINMEMRANGE(addr))
+		return 0;
+	uint32_t output; // temp var used for output of function
+	ReadProcessMemory(emuhandle, (LPVOID)(emuoffset + addr), &output, sizeof(output), NULL);
+	//MEM_ByteSwap32((uint32_t *)&output); // byteswap
 	return output;
 }
 

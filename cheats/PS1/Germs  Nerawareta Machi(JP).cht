@@ -1,0 +1,9 @@
+#group=Ungrouped
+#type=Gameshark
+#activation=EndFrame
+#Author = Unicorngoulash (Giovanni van den Heuvel)
+#Description = Forces the camera to update even without controller input. Made by Unicorngoulash (Giovanni van den Heuvel)
+[*Auto update camera read]
+80197A26 1000
+
+
