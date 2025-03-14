@@ -2,7 +2,7 @@
 
 An external app that injects cursor input into game memory. 
 
-### *This fork incorporates the work from https://github.com/vl4sty/MouseInjectorDolphinDuck in order to hook to newer versions of duckstation and pcsx2, however with support for some more games added by myself.*
+### *This fork incorporates the work from https://github.com/vl4sty/MouseInjectorDolphinDuck in order to hook to newer versions of duckstation and pcsx2, however with support for some more games added by myself and vl4sty.*
 
 I would have liked to simply fork their repo but Github doesn't allow you to fork a repo if you have already forked its upstream.
 
