@@ -90,6 +90,7 @@ avoid clicking off the window.
 |<sup> Echo Night (USA) |<sup> SLUS-00820 |<sup> Good |<sup> Not fully tested |<sup> - |<sup> - |
 |<sup> Future Cop: L.A.P.D. (USA) |<sup> SLUS-00739 |<sup> Fair |<sup> Not fully tested |<sup> - |<sup> - |
 |<sup> G-Police (USA) |<sup> SLUS-00544</br>SLUS-00556 |<sup> Good |<sup> Not full tested |<sup> - |<sup> - |
+|<sup> Germs : Nerawareta Machi (JP) |<sup> SLPS-02107 |<sup> Good |<sup> Not full tested |<sup> - |<sup> **Germs  Nerawareta Machi(JP).cht** |
 |<sup> Hellnight (Europe) |<sup> SLES-01562 |<sup> Good |<sup> Requires supplied cheat file</br>Not fully tested |<sup> - |<sup> **Hellnight_SLES-10562.cht** |
 |<sup> Hybrid (Japan, Europe) |<sup> SLPS-01102</br>SLES-03531 |<sup> Fair |<sup> Requires supplied cheat file<br>Not fully tested |<sup> - |<sup> **Hybrid_SLPS-01102.cht (Japan)<br>Hybrid_SLES-03531.cht (Europe)** |
 |<sup> Iron Soldier 3 (USA) |<sup> SLUS-01061 |<sup> Good |<sup> Advanced Controls not supported</br>Requires supplied cheat file</br>Not fully tested |<sup> - |<sup> **IronSoldier3_SLUS-01061.cht** |
